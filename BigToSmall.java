@@ -24,3 +24,16 @@ public class Main {
             }
         }
         System.out.println(Arrays.toString(firstArray));
+
+        }
+        private static int[] randomArray(int len){
+
+            Random random = new Random();
+            int[] newInt = new int[len];
+            for(int i = 0; i < len; i++){
+                newInt[i] = random.nextInt(100);
+            }
+            return newInt;
+
+        }
+}
